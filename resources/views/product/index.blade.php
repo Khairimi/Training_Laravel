@@ -28,7 +28,7 @@
             @endphp
             @forelse ($products as $product)
         <tr>
-            <th scope="row">1</th>
+            <th scope="row">{{ $index++ }}</th>
             <td>{{$product->name}}</td>
             <td>{{$product->desc}}</td>
             <td>{{$product->price}}</td>
